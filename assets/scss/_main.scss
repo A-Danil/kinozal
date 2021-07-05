@@ -1,3 +1,54 @@
 .main {
   @extend %margin-bottom-lg;
 }
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.new-films-item,
+.top-week-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+
+  &__thumbnail {
+    margin-bottom: 0;
+    transition: background-color 0.5s;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+      border-color: $color-accent;
+
+      & .new-films-item__title {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__caption {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.new-films-row,
+.top-week-row {
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+  margin-left: -7.5px;
+}
