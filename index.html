@@ -66,6 +66,56 @@
     <div class="row">
 
       <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+
+        <section class="site-search panel panel-info hidden-lg hiden mg">
+          <div class="panel-heading">Поиск</div>
+          <div class="panel-body">
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+        </section>
+
+        <section class="user-login panel panel-info hidden-lg hiden mg">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in" title="Вход"></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user" title="Регистрация"></span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="user-login__content tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login__sidebar">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         <section class="new-films">
           <h1 class="new-films__title">Новые фильмы</h1>
           <div class="new-films-row row">
@@ -317,6 +367,67 @@
             </article>
           </div>
         </section>
+
+        <section class="film-news">
+          <h2 class="film-news-title">Новости кино</h2>
+          <article class="film-news-item">
+            <h3><a href="#">Кейт Бекинсейл представила фильм "Другой мир: Войны крови"</a></h3>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="film-news-item__thumbnail thumbnail">
+                  <img class="film-news-item__image" src="assets/img/news/news-1.jpg" alt="image">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <p class="film-news-item__caption">Кейт Бекинсейл представила в Мексике свой новый фильм "Другой мир:
+                  Войны
+                  крови". На красной дорожке актриса позировала фотографам в роскошном красном платье. В фильме речь
+                  пойдет о Селене - Воительница-вампир Селена вступает в свой последний и решающий бой между оборотнями
+                  и кланом вампиров, который предал ее. В украинских кинотеатрах картину можно увидеть с 1 декабря...
+                </p>
+                <a class="film-news-item__button btn btn-warning" href="#">Подробней</a>
+              </div>
+            </div>
+          </article>
+          <article class="film-news-item">
+            <h3><a href="#">Критики Нью-Йорка выбрали лучший фильм 2016 года</a></h3>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="film-news-item__thumbnail thumbnail">
+                  <img class="film-news-item__image" src="assets/img/news/news-2.jpg" alt="image">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <p class="film-news-item__caption">Им стал мюзикл "Ла-Ла Ленд", который снял режиссер Дэмьен Шазелл.
+                  Лучшим
+                  актером года был признан Кейси Аффлек, сыгравший в картине "Манчестер у моря", а в аналогичной женской
+                  категории победа была присуждена Изабель Юппер снимавшаяся в фильме "Она". Лучшей актрисой второго
+                  плана названа Мишель Уильямс, сыгравшая в драме "Некоторые женщины", а лучшим актером второго плана -
+                  Махершалалхашбаз Али за роль в картине "Лунный свет"...
+                </p>
+                <a class="film-news-item__button btn btn-warning" href="#">Подробней</a>
+              </div>
+            </div>
+          </article>
+          <article class="film-news-item">
+            <h3><a href="#">Крис Прэтт и Дженнифер Лоуренс представили "Пассажиров" в Париже</a></h3>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="film-news-item__thumbnail thumbnail">
+                  <img class="film-news-item__image" src="assets/img/news/news-3.jpg" alt="image">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <p class="film-news-item__caption">Хотя до премьеры "Пассажиров" остается еще почти месяц, промо-тур в
+                  поддержку нового фильма уже начался: Крис Прэтт и Дженнифер Лоуренс, исполнившие в фильме главные
+                  роли, представили "Пассажиров" в рамках фотоколла в Париже. В кинотеатрах "Пассажиры" появятся под
+                  занавес 2016 года – 22 декабря...
+                </p>
+                <a class="film-news-item__button btn btn-warning" href="#">Подробней</a>
+              </div>
+            </div>
+          </article>
+        </section>
       </main>
 
       <aside class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
@@ -375,7 +486,7 @@
           </div>
         </div>
 
-        <div class="user-login panel panel-info">
+        <div class="user-login panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
 
@@ -404,7 +515,6 @@
                   <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
                 </form>
               </div>
-              <!-- <div role="tabpanel" class="tab-pane fade" id="profile">...</div> -->
             </div>
 
           </div>
@@ -520,9 +630,67 @@
     </div>
   </div>
 
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="footer-top">
+              <div class="footer-first col-md-3 col-xs-6">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Delectus, labore, incidunt.</a></li>
+                  <li><a href="#">Eos neque, eius.</a></li>
+                  <li><a href="#">Minus, omnis vel.</a></li>
+                </ul>
+              </div>
+              <div class="footer-second col-md-3 col-xs-6">
+                <h4>Voluptatem, commodi, at.</h4>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Delectus, labore, incidunt.</a></li>
+                  <li><a href="#">Eos neque, eius.</a></li>
+                  <li><a href="#">Minus, omnis vel.</a></li>
+                  <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                </ul>
+              </div>
+              <div class="footer-third col-md-3 col-xs-6">
+                <h4>Sed, ducimus perspiciatis.</h4>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Delectus, labore, incidunt.</a></li>
+                  <li><a href="#">Eos neque, eius.</a></li>
+                  <li><a href="#">Minus, omnis vel.</a></li>
+                </ul>
+              </div>
+              <div class="footer-fourth col-md-3 col-xs-6">
+                <h4>Reiciendis, minima, a?</h4>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Delectus, labore, incidunt.</a></li>
+                  <li><a href="#">Eos neque, eius.</a></li>
+                  <li><a href="#">Minus, omnis vel.</a></li>
+                  <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="footer-bottom">
+              <div class="footer-fifth col-xs-12">
+                <span>
+                  <a href="#">Учебный шаблон Bootstrap v3.4.1. Разработка - Данил Козорог
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-  <footer class="footer">footer</footer>
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
