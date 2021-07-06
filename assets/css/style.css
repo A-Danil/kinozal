@@ -340,15 +340,19 @@ textarea.form-control {
   width: calc(100% - 85px);
 }
 
+.site-news-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
 .site-news-item__thumbnail {
   float: left;
   width: 75px;
   margin: 0 10.0px 10.0px 0;
-}
-
-.site-news-item:hover .thumbnail {
-  border-color: #df8a13;
-  background-color: #df8a13;
 }
 
 .site-news-item__title {

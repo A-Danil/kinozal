@@ -52,15 +52,21 @@
     }
   }
 
+  &:hover {
+    & .thumbnail {
+      border-color: #df8a13;
+      background-color: #df8a13;
+    }
+
+    & a {
+      color: $color-accent;
+    }
+  }
+
   &__thumbnail {
     float: left;
     width: 75px;
     margin: 0 $gap-md $gap-md 0;
-  }
-
-  &:hover .thumbnail {
-    border-color: #df8a13;
-    background-color: #df8a13;
   }
 
   &__title {
