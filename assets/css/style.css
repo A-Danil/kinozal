@@ -149,6 +149,14 @@ h4 {
   letter-spacing: 0.2em;
 }
 
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
 section {
   position: relative;
   overflow: hidden;
@@ -377,7 +385,7 @@ textarea.form-control {
 .top-films__item {
   margin-right: -1px;
   margin-left: -1px;
-  padding-right: 50px;
+  padding-right: 55px;
   color: #165690 !important;
   background-color: transparent;
 }

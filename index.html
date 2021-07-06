@@ -74,7 +74,7 @@
               <div class="input-group input-group-lg">
                 <input type="text" class="form-control" placeholder="Поиск по сайту">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">
+                  <button class="btn btn-default" type="submit">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                   </button>
                 </span>
@@ -88,19 +88,21 @@
 
             <ul class="user-login__tabs nav nav-tabs" role="tablist">
               <li role="presentation" class="active">
-                <a href="#" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab"
+                  aria-expanded="true">
                   <span class="glyphicon glyphicon-log-in" title="Вход"></span>
                 </a>
               </li>
               <li role="presentation">
-                <a href="#" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab"
+                  aria-expanded="false">
                   <span class="glyphicon glyphicon-user" title="Регистрация"></span>
                 </a>
               </li>
             </ul>
 
             <div class="user-login__content tab-content">
-              <div role="tabpanel" class="tab-pane fade in active" id="user-login__sidebar">
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
                 <form action="login">
                   <div class="form-group">
                     <input class="form-control input-lg" type="text" placeholder="Логин">
@@ -109,6 +111,21 @@
                     <input class="form-control input-lg" type="password" placeholder="Пароль">
                   </div>
                   <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
                 </form>
               </div>
             </div>
@@ -697,7 +714,7 @@
             <div class="footer-bottom">
               <div class="footer-fifth col-xs-12">
                 <span>
-                  <a href="#">Учебный шаблон Bootstrap v3.4.1. Разработка - Данил Козорог
+                  <a href="#">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей Фоменко
                   </a>
                 </span>
               </div>
