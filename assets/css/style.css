@@ -231,6 +231,10 @@ section {
   transition: background-color 0.5s;
 }
 
+.film-news-item__image {
+  width: 100%;
+}
+
 .film-news-item:hover h3 > a {
   color: #df8a13;
 }

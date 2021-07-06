@@ -71,6 +71,10 @@ section {
     transition: background-color 0.5s;
   }
 
+  &__image {
+    width: 100%;
+  }
+
   &:hover {
     & h3 > a {
       color: $color-accent;
