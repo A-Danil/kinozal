@@ -47,7 +47,7 @@
       background-color: $color-gray;
       height: 1px;
       right: 0;
-      bottom: -5px;
+      bottom: -4px;
       width: calc(100% - 85px);
     }
   }
@@ -64,7 +64,7 @@
   }
 
   &__title {
-    margin-bottom: $gap-md;
+    margin-bottom: 0.5em;
   }
 
   &__link {
